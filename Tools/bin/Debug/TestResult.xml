@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Caleb.Carvalho\Documents\Visual Studio 2012\Projects\CDW\CDW\Tools\bin\Debug\Tools.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-08-20" time="09:52:47">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.5477" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Nunit\NUnit-2.6.3\NUnit-2.6.3\bin" machine-name="IT004068" user="caleb.carvalho" user-domain="LME" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Caleb.Carvalho\Documents\Visual Studio 2012\Projects\CDW\CDW\Tools\bin\Debug\Tools.dll" executed="True" result="Success" success="True" time="27.422" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="TestScenarios" executed="True" result="Success" success="True" time="27.404" asserts="0">
+        <results>
+          <test-suite type="ParameterizedTest" name="SeleniumTest" executed="True" result="Success" success="True" time="27.394" asserts="0">
+            <results>
+              <test-case name="CWDTest.TestScenarios.SeleniumTest()" executed="True" result="Success" success="True" time="27.389" asserts="0" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
