@@ -28,6 +28,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Windows.Automation;
+using Microsoft.Practices.Prism.UnityExtensions;
 
 namespace CWDTest
 {
@@ -41,7 +42,17 @@ namespace CWDTest
         private IWebDriver driver;
 
 
-       
+        [TestCase("add numbers", 2)]
+        [TestCaseAttribute("remove", 3)]
+        [TestCaseAttribute("another test", 4)]
+        
+        public void BootS(string name,int number)
+        {
+            
+            Console.WriteLine("Testing outputting for {0} with numbers {1}",name, number);          
+
+
+        }
         [TestCase]
         public void UITest()
         {
@@ -89,11 +100,14 @@ namespace CWDTest
              } while (aeCryptoCalc == null && numWaits < 50);
 
              if (aeCryptoCalc == null)
-                 throw new Exception("Failed to find LMEClear_CDW_GUI main window"); 
+             {
+                 Console.WriteLine("Failed to find LMEClear_CDW_GUI main window");
+                 Assert.NotNull(aeCryptoCalc);
+                 
+             }
              else
                  Console.WriteLine("Found LMEClear_CDW_GUI main window");
-
-             Console.WriteLine("\nGetting all user controls");
+                Console.WriteLine("\nGetting all user controls");
 
 
              AutomationElementCollection aeAllTextBoxes = null;
@@ -106,14 +120,15 @@ namespace CWDTest
              }
              else
              {
-                 Console.WriteLine("Got textboxes collection total of {0}", aeAllTextBoxes.Count);
-             
+                 Console.WriteLine("Got textboxes collection total of {0}", aeAllTextBoxes);
+                
                  foreach (AutomationElement txtBoxes in aeAllTextBoxes)
                  {
                      Console.WriteLine(txtBoxes);
                  }
              }
 
+           
              AutomationElement aeMenuBar = null;
              aeMenuBar = aeCryptoCalc.FindFirst(TreeScope.Element, new PropertyCondition(AutomationElement.ItemTypeProperty, "MenuBar"));
              if (aeMenuBar == null) 
@@ -237,7 +252,7 @@ namespace CWDTest
 
                              
 
-        //  [TestCase]
+        [TestCase]
         public void DisplayBondHaircutsTable()
         {
             /*clsDataAccess dataAccess = new clsDataAccess();
@@ -270,10 +285,8 @@ namespace CWDTest
 
 
         }
-
-
-
-        //     [TestCase]
+                
+        [TestCase]
         [STAThread]
         public void StressScenarioBondDataTable()
         {
