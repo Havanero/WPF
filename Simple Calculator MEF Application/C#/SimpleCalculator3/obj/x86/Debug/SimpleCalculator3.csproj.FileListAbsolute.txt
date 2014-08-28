@@ -1,0 +1,4 @@
+C:\Users\Caleb.Carvalho\Documents\Visual Studio 2012\Projects\CDW\CDW\Simple Calculator MEF Application\C#\SimpleCalculator3\bin\Debug\SimpleCalculator3.exe
+C:\Users\Caleb.Carvalho\Documents\Visual Studio 2012\Projects\CDW\CDW\Simple Calculator MEF Application\C#\SimpleCalculator3\bin\Debug\SimpleCalculator3.pdb
+C:\Users\Caleb.Carvalho\Documents\Visual Studio 2012\Projects\CDW\CDW\Simple Calculator MEF Application\C#\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.exe
+C:\Users\Caleb.Carvalho\Documents\Visual Studio 2012\Projects\CDW\CDW\Simple Calculator MEF Application\C#\SimpleCalculator3\obj\x86\Debug\SimpleCalculator3.pdb
