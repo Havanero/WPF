@@ -44,15 +44,12 @@ namespace CWDTest
 
         [TestCase("add numbers", 2)]
         [TestCaseAttribute("remove", 3)]
-        [TestCaseAttribute("another test", 4)]
-        
+        [TestCaseAttribute("another test", 4)]        
         public void BootS(string name,int number)
-        {
-            
+        {            
             Console.WriteLine("Testing outputting for {0} with numbers {1}",name, number);          
-
-
         }
+
         [TestCase]
         public void UITest()
         {
